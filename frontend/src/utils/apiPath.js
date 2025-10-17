@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export const BASE_URL = 'http://localhost:4000'
 
 // ROUTES USED FOR FRONTEND
@@ -23,4 +24,31 @@ export const API_PATHS = {
     }
     
    
+=======
+export const BASE_URL = 'http://localhost:4000'
+
+// ROUTES USED FOR FRONTEND
+ 
+export const API_PATHS = {
+
+    AUTH:{
+    REGISTER: '/api/auth/register',
+    LOGIN: '/api/auth/login',
+    GET_PROFILE: 'api/auth/profile'},
+
+    RESUME: {
+    CREATE: '/api/resumes',
+    GET_ALL: '/api/resumes',
+    GET_BY_ID: (id) => `/api/resumes/${id}`,
+
+    UPDATE: (id) => `/api/resumes/${id}`,
+    DELETE: (id) => `/api/resumes/${id}`,
+    UPLOAD_IMAGES: (id) => `/api/resumes/${id}/upload-images`
+    },
+    image:{
+        UPLOAD_IMAGE: '/api/image/upload-image',
+    }
+    
+   
+>>>>>>> a36c4b3afb22ec33d55f98c1f135cb4b4bbfb571
 }
